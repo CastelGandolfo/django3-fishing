@@ -1,0 +1,29 @@
+{% extends "fishing/base.html" %}
+
+{% block content %}
+  
+
+<div id="XXX"></div><div id="XXX"></div>
+
+<div id="projects-title-first">
+    <h2>Dostępne produkty</h2>
+</div>
+
+<div id="project-content">
+
+   {% for product in products %}
+    <div>
+        <a href="/products/{{ product.id }}">
+            <h4>{{product.title}}</h4>
+        </a>
+        <a href="#"></a>
+        </a>
+    </div>
+    {% endfor %}
+
+    
+
+
+</div>
+
+{% endblock %} 

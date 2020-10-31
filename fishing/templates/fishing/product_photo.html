@@ -1,0 +1,31 @@
+{% extends "fishing/base.html" %}
+
+{% block content %}
+  
+
+<div id="XXX"></div><div id="XXX"></div>
+
+<div id="projects-title-first">
+    <h1><strong>{{product.title}}</strong></h1>
+</div>
+
+
+<div id="product-content">
+
+    <div class="image-container">
+        <img src="{{product.photo.url}}" alt="rrr">  
+    </div>
+
+    
+    
+    <div class="text-container">
+        <a href="#">
+            <h4>{{product.description}}</h4>
+        </a>
+        {% comment %} <img src="{{product.photo}}" alt="rrr">   {% endcomment %}
+        </a>
+    </div>
+
+</div>
+
+{% endblock %} 
