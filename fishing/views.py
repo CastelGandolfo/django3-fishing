@@ -1,17 +1,24 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Product
+from .models import Product, About, Contact, HomeInfo
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'fishing/home.html')
+
+    homeinfo = HomeInfo.objects.all()
+    return render(request, 'fishing/home.html', {"homeinfo": homeinfo[0]})
 
 
 def contact(request):
-    return render(request, 'fishing/contact.html')
+
+    contact = Contact.objects.all()
+
+    return render(request, 'fishing/contact.html', {"contact": contact[0]})
 
 def info(request):
-    return render(request, 'fishing/info.html')
+    about = About.objects.all()
+
+    return render(request, 'fishing/info.html', {"about": about[0]})
 
 
     

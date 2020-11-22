@@ -2,7 +2,6 @@
 
 {% block content %}
   
-
 <div id="XXX"></div><div id="XXX"></div>
 
 <div id="projects-title-first">
@@ -12,9 +11,11 @@
 <div id="project-content">
 
    {% for product in products %}
-    <div>
+    <div style="background: url('{{ product.photosmall.url }}') center center/cover
+    no-repeat;">
         <a href="/products/{{ product.id }}">
             <h4>{{product.title}}</h4>
+            {% comment %} <img src="{{product.photo.url}}" alt=""> {% endcomment %}
         </a>
         <a href="#"></a>
         </a>

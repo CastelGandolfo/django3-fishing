@@ -72,9 +72,11 @@ body {
   margin: 15px;
   border-radius: 7%;
   font-size: 1.3rem;
-  background-color: rgba(30, 33, 36, 0.25);
-  /* opacity: 0.25; */
-  /* color: rgb(0, 0, 0); */
+  /* background-color: rgba(30, 33, 36, 0.25); */
+  
+  /* background: url('/static/fishing/img/background7.jpg') center center/cover
+    no-repeat fixed; */
+  
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -148,18 +150,16 @@ body {
 }
 
 #product-content .text-container:hover {
-  /* background-color: rgba(143, 144, 145, 0.15); */
   opacity: 0.8;
 }
 
 #product-content .text-container a {
   color: #f4f4f4;
   text-decoration: none;
-  /* padding: 20px; */
 }
 
 #product-content .image-container {
-  width: 30vw;
+  width: 70vw;
   height: auto;
   margin: 15px;
   border-radius: 2%;
@@ -192,7 +192,7 @@ body {
   min-width: 150px;  */
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     #product-content .image-container {
     width: 50vw;
     height: auto;
@@ -209,5 +209,5 @@ body {
     align-items: center;
     min-width: 150px;
     padding: 15px;
-  }
+  } */
 }
